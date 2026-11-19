@@ -150,6 +150,7 @@ export const projectsList = [
   {
     id: "daha-fragrance",
     name: "Daha Fragrance",
+    image: "images/daha-fragrance.webp",
     industry: "Perfumes / E-commerce",
     country: "Pakistan",
     role: "Website Designer + Graphic Designer + Social Media + Meta Ads",
