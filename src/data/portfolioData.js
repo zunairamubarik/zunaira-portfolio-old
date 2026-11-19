@@ -4,7 +4,7 @@ export const personalInfo = {
   title: "Creative Designer & Digital Marketing Specialist",
   tagline: "I create thoughtful digital experiences, visual identities, websites and marketing campaigns that help businesses communicate better and grow.",
   experienceBadge: "3+ Years of Professional Experience",
-  profileImage: "/images/profile.jpg",
+  profileImage: "images/profile.jpg",
   headlineAbout: "Designing with purpose. Marketing with strategy.",
   bio: "I am a creative designer and digital marketing professional with 3+ years of experience. My strongest professional focus is DESIGN. I combine visual aesthetics with strategic marketing to build high-converting websites, digital campaigns, and automated client acquisition systems.",
   education: {

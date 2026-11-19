@@ -102,7 +102,7 @@ export default function Hero() {
                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   onError={(e) => {
                     // Fallback to jpeg alias if needed
-                    e.target.src = '/images/profile.jpg.jpeg';
+                    e.target.src = 'images/profile.jpg.jpeg';
                   }}
                 />
 
