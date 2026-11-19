@@ -5,73 +5,83 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
   }
 
   body {
-    background-color: #F7F5EF;
-    color: #171A18;
+    background-color: #0A0A0A;
+    color: #F1E7D3;
     overflow-x: hidden;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Manrope', sans-serif;
   }
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #F7F5EF;
+  background: #0A0A0A;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C8BFA9;
-  border-radius: 4px;
+  background: #2a221b;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #12372A;
+  background: #B76E4C;
 }
 
-/* Glassmorphism & Custom Polish */
-.glass-nav {
-  background: rgba(247, 245, 239, 0.92);
+/* Glassmorphism & Warm Glow Utilities */
+.glass-panel {
+  background: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(216, 195, 165, 0.15);
+}
+
+.glass-panel-light {
+  background: rgba(241, 231, 211, 0.9);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(183, 110, 76, 0.15);
 }
 
-.glass-emerald {
-  background: rgba(18, 55, 42, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+.glow-border {
+  position: relative;
 }
 
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.badge-pulse {
-  box-shadow: 0 0 0 0 rgba(201, 92, 74, 0.4);
-  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+.glow-border::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(135deg, rgba(183, 110, 76, 0.4), transparent 60%, rgba(216, 195, 165, 0.2));
+  border-radius: inherit;
+  z-index: -1;
+  pointer-events: none;
 }
 
-@keyframes pulse-ring {
-  0% {
-    box-shadow: 0 0 0 0 rgba(201, 92, 74, 0.6);
-  }
-  70% {
-    box-shadow: 0 0 0 10px rgba(201, 92, 74, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(201, 92, 74, 0);
-  }
+/* Earthy Accent Gradients */
+.text-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F1E7D3 60%, #D8C3A5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple,
+.text-gradient-earth {
+  background: linear-gradient(135deg, #F1E7D3 0%, #D8C3A5 50%, #B76E4C 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-radial-purple,
+.bg-radial-earth {
+  background: radial-gradient(circle at 50% 0%, rgba(183, 110, 76, 0.18) 0%, rgba(10, 10, 10, 0) 75%);
+}
+
+.bg-dots-pattern {
+  background-image: radial-gradient(rgba(216, 195, 165, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
 }

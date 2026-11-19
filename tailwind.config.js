@@ -8,45 +8,56 @@ export default {
   theme: {
     extend: {
       colors: {
-        emerald: {
-          deep: '#12372A',
-          forest: '#1F5942',
-          light: '#2D7A5D',
-          pale: '#EAF3EF',
+        obsidian: {
+          DEFAULT: '#0A0A0A',
+          surface: '#141414',
+          card: '#1c1c1c',
+          border: 'rgba(216, 195, 165, 0.15)',
+          borderHover: 'rgba(183, 110, 76, 0.4)',
         },
-        gold: {
-          champagne: '#C89B5A',
-          light: '#E5C492',
-          dark: '#A67B3E',
+        earth: {
+          black: '#0A0A0A',
+          dark: '#141414',
+          cream: '#F1E7D3',
+          beige: '#D8C3A5',
+          terracotta: '#B76E4C',
+          terracottaDark: '#9C5B3D',
         },
-        ivory: {
-          DEFAULT: '#F7F5EF',
-          soft: '#FAF8F4',
-          dark: '#EBE7DF',
+        brand: {
+          50: '#fdfbf7',
+          100: '#f7f0e6',
+          200: '#eddcc7',
+          300: '#D8C3A5', // Beige
+          400: '#C97D5B',
+          500: '#B76E4C', // Terracotta Accent
+          600: '#B76E4C',
+          700: '#9C5B3D',
+          800: '#7E482F',
+          900: '#613622',
+          950: '#331A0F',
+          glow: '#B76E4C'
         },
-        charcoal: {
-          DEFAULT: '#171A18',
-          light: '#2D322F',
-          muted: '#525B56',
-        },
-        terracotta: {
-          DEFAULT: '#C95C4A',
-          dark: '#B04B3A',
-          light: '#FDF1EF',
-        },
+        editorial: {
+          bg: '#F1E7D3', // Cream primary light section
+          card: '#ffffff',
+          text: '#0A0A0A',
+          muted: '#4a4237',
+          border: '#e4d7c3'
+        }
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        heading: ['Manrope', 'sans-serif'],
+        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+        display: ['Outfit', 'Plus Jakarta Sans', 'sans-serif']
       },
       boxShadow: {
-        'meqy': '0 4px 20px -2px rgba(18, 55, 42, 0.06), 0 2px 6px -1px rgba(18, 55, 42, 0.04)',
-        'meqy-hover': '0 12px 30px -4px rgba(18, 55, 42, 0.12), 0 4px 12px -2px rgba(18, 55, 42, 0.06)',
-        'meqy-modal': '0 25px 50px -12px rgba(18, 55, 42, 0.25)',
+        'glow-sm': '0 0 15px -3px rgba(183, 110, 76, 0.25)',
+        'glow-md': '0 0 30px -5px rgba(183, 110, 76, 0.35)',
+        'glow-lg': '0 0 50px -10px rgba(183, 110, 76, 0.45)',
       },
-      borderRadius: {
-        'card': '16px',
-      },
+      backgroundImage: {
+        'radial-glow': 'radial-gradient(circle at center, rgba(183, 110, 76, 0.15) 0%, transparent 70%)',
+        'hero-gradient': 'radial-gradient(ellipse at 50% -20%, rgba(183, 110, 76, 0.2), transparent 70%)',
+      }
     },
   },
   plugins: [],
