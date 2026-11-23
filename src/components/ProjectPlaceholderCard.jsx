@@ -15,20 +15,18 @@ export default function ProjectPlaceholderCard({ project }) {
 
   if (project.image) {
     return (
-      <div className="relative w-full h-48 sm:h-52 rounded-2xl overflow-hidden border border-brand-500/20 group-hover:border-brand-500/50 transition-all">
-        <img src={project.image} alt={project.name} className="absolute inset-0 w-full h-full object-cover" />
+      <div className="relative w-full aspect-[16/10] rounded-2xl overflow-hidden border border-brand-500/20 group-hover:border-brand-500/50 transition-all bg-obsidian-card">
+        <img
+          src={project.image}
+          alt={project.name}
+          className="absolute inset-0 w-full h-full object-cover object-top"
+        />
       </div>
     );
   }
 
   return (
-    <div className={`relative w-full h-48 sm:h-52 rounded-2xl bg-gradient-to-br ${project.accentColor || 'from-violet-900 to-obsidian'} border border-brand-500/20 overflow-hidden flex flex-col justify-between p-5 group-hover:border-brand-500/50 transition-all`}>
-    {project.image && (
-  <img src={project.image} alt={project.name} className="absolute inset-0 w-full h-full object-cover" />
-)}
-{project.image && (
-  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/40 pointer-events-none"></div>
-)}
+    <div className={`relative w-full aspect-[16/10] rounded-2xl bg-gradient-to-br ${project.accentColor || 'from-violet-900 to-obsidian'} border border-brand-500/20 overflow-hidden flex flex-col justify-between p-5 group-hover:border-brand-500/50 transition-all`}>
       {/* Subtle Background Pattern Lines */}
       <div className="absolute inset-0 bg-dots-pattern opacity-20 pointer-events-none"></div>
       
