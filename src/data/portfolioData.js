@@ -167,6 +167,7 @@ export const projectsList = [
   {
     id: "moorthix-automation",
     name: "Moorthix Automation Suite",
+    image: "images/moorthix-automation.webp",
     industry: "Automation / HVAC / Med Spa",
     country: "Canada / Global",
     role: "Lead Generation & GHL Automation Specialist",
