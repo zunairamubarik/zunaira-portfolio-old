@@ -197,6 +197,7 @@ export const projectsList = [
   {
     id: "koh-waters",
     name: "KOH Waters Brand Identity",
+    image: "images/koh-waters.webp",
     industry: "Water / Branding",
     country: "Beverage",
     role: "Graphic Designer / Brand Identity",
